@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
 
+import './App.css'
+import SearchIcon from './search.svg'
+
 
 //40e19a4e - OMDB API Key
 
@@ -19,8 +22,12 @@ const App = () => {
   }, [])
 
   return (
-    <div className="App">
-      <h1>React 18 Alpha</h1>
+    <div className="app">
+      <h1>MovieLand 🌏</h1>
+
+      <div className='search'>
+        <input type="text" placeholder="Search for movies" />
+      </div>
     </div>
   );
 }
